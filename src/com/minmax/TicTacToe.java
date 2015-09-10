@@ -212,12 +212,12 @@ public class TicTacToe {
 			newGame.showBoard();
 			newGame.callMinMax();
 			newGame.minMax(COMPUTER, 0);
-			int min = Integer.MAX_VALUE;
+			int max = Integer.MIN_VALUE;
 			int pos = -1;
 			for (PointWithScore p : newGame.levelPointWithScores) {
 				System.out.println(p.position + " " + p.score);
-				if (min > p.score) {
-					min = p.score;
+				if (max < p.score) {
+					max = p.score;
 					pos = p.position;
 
 				}
