@@ -3,11 +3,14 @@ package com.minmax;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Vector;
 
 class PointWithScore {
+
 	public PointWithScore(Integer position, int score) {
 		this.position = position;
 		this.score = score;
+	
 	}
 
 	int position;
