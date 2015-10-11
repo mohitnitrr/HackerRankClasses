@@ -1,7 +1,6 @@
 package com.multithreading;
 
 import java.util.Stack;
-import java.util.Vector;
 
 class PrintAlphanumric {
 	boolean turn = false;
@@ -80,7 +79,6 @@ class Numeric implements Runnable {
 public class MultiThreading {
 	public static void main(String[] args) {
 		Stack<Integer> kj = new Stack<Integer>();
-		Vector<E>
 		PrintAlphanumric alphaNumeric = new PrintAlphanumric();
 		Thread t1 = new Thread(new Alphabet(alphaNumeric));
 		Thread t2 = new Thread(new Numeric(alphaNumeric));
